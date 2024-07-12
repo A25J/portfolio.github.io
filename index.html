@@ -7,19 +7,83 @@
 </head>
 <body>
     <div class="body">
-    <div class="navigator">
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-
+        <div class="admin">
+            <a href="login.html">Alaa Janbieh</a>
+        </div>
+    <nav>
+        <ul class="nav-bar">
+            <li  class="nav">
+                <a href="#about" class="nav-links">About</a>
+            </li>
+            <li  class="nav">
+                <a href="#projects" class="nav-links">Projects</a>
+            </li>
+            <li  class="nav">
+                <a href="#contact" class="nav-links">Contact</a>
+            </li>
         </ul>
-    </div>
+    </nav>
     </div>
 </body>
 </html>
 <style>
-    .navigator{
+    body{
+        background-color: #000;
+        display: flex;
+    }
+    nav {
+        float: right;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
 
+    .nav-bar {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 20px;
+    }
+
+    .nav {
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        color: rgb(152, 240, 206);
+        text-decoration: none;
+        padding: 10px;
+        position: relative;
+    }
+
+    .nav-links::after {
+        content: "";
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: grey;
+        transition: width 0.5s ease, left 0.5s ease;
+        width: 0;
+        margin: 5px;
+
+    }
+
+    .nav-links:hover::after {
+        width: 100%;
+        left: 0;
+        background-color: rgb(130, 164, 173);
+
+        margin: 5px;
+    }
+    .admin a{
+        list-style-type: none;
+        color: rgb(152, 240, 206);
+        text-decoration: none;
+    }
+    .admin{
+        position: fixed;
+        top: 0;
+        z-index: 1000;
     }
 </style>
