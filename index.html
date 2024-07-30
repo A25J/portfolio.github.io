@@ -4,86 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="'bx bx-user'">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="body">
-        <div class="admin">
-            <a href="login.html">Alaa Janbieh</a>
+    <header class="header">
+        <a href="#home" class="logo"> Alaa <span>Janbieh</span> </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#account" class="active">Home</a>
+            <a href="#education"> Education </a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact </a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, it's <span>Alaa</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>A hardworking and passionate Full Stack Web Developer, always looking to learn new skills and technologies. Eager and enthusiast to prove my abilities by accepting challenges and seeking creative solutions</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/alaa-janbieh-8b1bb323a/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/A25J"><i class='bx bxl-github'target="_blank" ></i></a>
+                <a href="https://www.instagram.com/alaa_janbieh/?hl=en"target="_blank" ><i class='bx bxl-instagram'></i></a>
+                <a href="https://x.com/AlaaJanbieh?t=OXqZaaAWfORSgm8TTyyCMg&s=09"target="_blank" ><i class='bx bxl-twitter'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
         </div>
-    <nav>
-        <ul class="nav-bar">
-            <li  class="nav">
-                <a href="#about" class="nav-links">About</a>
-            </li>
-            <li  class="nav">
-                <a href="#projects" class="nav-links">Projects</a>
-            </li>
-            <li  class="nav">
-                <a href="#contact" class="nav-links">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    </div>
+            <div class="home-img">
+                <img src="IMG-20240527-WA0023.jpg" alt="" height="400px">
+            </div>
+    </section>
+
+    <section class="education"> 
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"> </div>
+                    <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h3>High School</h3>
+                            <p>Finished High School with Life Science Bac with Honor and an average of 16.5/20 
+                                according to the Lebanese curriculum. Worked with skills like analyze and interpret in 
+                                biology. Analyzed and solved Mathematical and physics problems. 
+                            </p>
+
+                        
+                    </div>
+               
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <h3>Access Micro scholarship program</h3>
+                            <p>The access is a program funded by the US Embassy in Beirut and Teach For Lebanon.
+                                The program is directed to high school students who have graduated from Brevet with an average above 12.
+                                It is an intensive English course that teaches students writing, reading, speaking, grammar, and Leadership skills.
+                                During these years, as a team, we've developed a social work project to help a nursery and spread joy between kids. 
+                                Moreover, we developed an environmental project that won the first place about improving a touristic landmark.
+                            </p>
+                    </div>
+                
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>University</h3>
+                            <p> Graduated from the Lebanese international university with a Bachelor of Science in Computer science
+                                with Distinction and GPA of 3.73/4. 
+                                Developed an E-commerce website intended for women to help her find whatever she wants in one place.
+                                I've used html5, css3 and javascript to maintain a responsive web design. phpmyadmin and SQL to manage
+                                the database of the website. Php for server side, and JQuery framework to maintain communication between stakeholders of the website
+                            </p>
+                    </div>
+                
+            </div>
+            
+        </div>
+    </section>
 </body>
 </html>
-<style>
-    body{
-        background-color: #000;
-        display: flex;
-    }
-    nav {
-        float: right;
-        position: fixed;
-        top: 0;
-        z-index: 1000;
-    }
-
-    .nav-bar {
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        padding: 10px 20px;
-    }
-
-    .nav {
-        margin-left: 20px;
-    }
-
-    .nav-links {
-        color: rgb(152, 240, 206);
-        text-decoration: none;
-        padding: 10px;
-        position: relative;
-    }
-
-    .nav-links::after {
-        content: "";
-        display: block;
-        height: 4px;
-        left: 50%;
-        position: absolute;
-        background: grey;
-        transition: width 0.5s ease, left 0.5s ease;
-        width: 0;
-        margin: 5px;
-
-    }
-
-    .nav-links:hover::after {
-        width: 100%;
-        left: 0;
-        background-color: rgb(130, 164, 173);
-
-        margin: 5px;
-    }
-    .admin a{
-        list-style-type: none;
-        color: rgb(152, 240, 206);
-        text-decoration: none;
-    }
-    .admin{
-        position: fixed;
-        top: 0;
-        z-index: 1000;
-    }
-</style>
