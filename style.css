@@ -339,6 +339,7 @@ span{
     left: calc(50% - 8px);
     border-radius: 50%;
     top: 10px;
+    z-index: 5;
 }
 
 .timeline-date{
@@ -371,4 +372,12 @@ span{
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
 }
